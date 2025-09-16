@@ -277,7 +277,7 @@ body {
   margin-bottom: 2em;
 }
 
-button {
+.contato__Botao__EnviarMensagem{
   background-color: var(--accent);
   color: var(--dark);
   font-weight: bold;
@@ -330,14 +330,20 @@ footer {
   }
 
   .contato__Div__Mapa{
-    width: 350px;
-    height: 350px;
+      width: 450px;
+    height: 320px;
+  }
+
+  .contato__Formulario__inputs{
+    width: 500px;
   }
 
 }
 
 @media screen and (min-width: 1394px) {
+
   .servicos{
     flex-direction: row;
-  }  
+  }
+
 }
