@@ -11,10 +11,7 @@
       name="keywords"
       content="desenvolvimento web, aplicativos, consultoria TI"
     />
-    <link 
-      rel="icon" 
-      href="images/logonassau.jpeg" 
-      type="image/png">
+    <link rel="icon" href="images/logonassau.jpeg" type="image/png" />
     <title>NassauSoft - Soluções Tecnológicas</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -75,7 +72,7 @@
     </section>
 
     <!---------------AQUI COMEÇA O SERVIÇOS--------------------->
-    <section class="servicos__Div" id="servicos">
+    <section class="servicos__Div">
       <h2 class="servicos__H2">Serviços</h2>
       <div class="servicos">
         <div class="card">
@@ -84,8 +81,8 @@
             src="images/png's/pc.png"
             alt="Desenvolvimento Web"
           />
-          <h3>Desenvolvimento Web</h3>
-          <p>Sites personalizados, responsivos e modernos para web.</p>
+          <h3 class="servico__Card__Titulo">Desenvolvimento Web</h3>
+          <p class="servico__Card__subtitulo">Sites personalizados, responsivos e modernos para web.</p>
         </div>
         <div class="card">
           <img
@@ -93,36 +90,47 @@
             src="images/png's/iphone.png"
             alt="Desenvolvimento Mobile"
           />
-          <h3>Desenvolvimento Mobile</h3>
-          <p>Aplicativos móveis personalizados para Android e iOS.</p>
+          <h3 class="servico__Card__Titulo">Desenvolvimento Mobile</h3>
+          <p class="servico__Card__subtitulo">Aplicativos móveis personalizados para Android e iOS.</p>
         </div>
         <div class="card">
-          <img class="card__imagem" src="images/png's/consultoria.png" alt="Consultoria" />
-          <h3>Consultoria em TI</h3>
-          <p>Diagnóstico e soluções tecnológicas sob medida.</p>
+          <img
+            class="card__imagem"
+            src="images/png's/consultoria.png"
+            alt="Consultoria"
+          />
+          <h3 class="servico__Card__Titulo">Consultoria em TI</h3>
+          <p class="servico__Card__subtitulo">Diagnóstico e soluções tecnológicas sob medida.</p>
         </div>
       </div>
     </section>
 
     <!---------------AQUI COMEÇA O PROJETOS--------------------->
-    <section id="projetos">
-      <h2>Projetos</h2>
+    <section class="projetos__Div">
+      <h2 class="projetos__Div__H2">Projetos</h2>
       <div class="projetos">
-        <img src="assets/images/projeto1.jpg" alt="Projeto 1" />
-        <img src="assets/images/projeto2.jpg" alt="Projeto 2" />
-        <img src="assets/images/projeto3.jpg" alt="Projeto 3" />
+        <p class="projetos__Div__Paragrafo">Parte em Manutenção</h2>
       </div>
     </section>
 
     <!---------------AQUI COMEÇA O CONTATOS--------------------->
-    <section id="contato">
-      <h2>Contato</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu e-mail" required />
-        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-        <button type="submit">Enviar Mensagem</button>
-      </form>
+    <section class="contato__Div" id="contato">
+      <h2 class="contato__Div__H2">Contato</h2>
+      <div class="contato__Div__Div">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.990223105774!2d-35.20037028835726!3d-5.856996694101986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff3f8bd1d317%3A0x7f4b691e3f5681de!2sUNINASSAU%20-%20Natal!5e0!3m2!1spt-BR!2sbr!4v1758047116236!5m2!1spt-BR!2sbr"
+          class="contato__Div__Mapa"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form class="contato__Formulario__inputs">
+          <input class="contato__Seu__Nome" type="text" placeholder="Seu nome" required />
+          <input class="contato__Seu__Nome" type="email" placeholder="Seu e-mail" required />
+          <textarea class="contato__Seu__Nome" placeholder="Sua mensagem" rows="5" required></textarea>
+          <button class="contato__Botao__EnviarMensagem" type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
     </section>
 
     <!---------------AQUI COMEÇA O FOOTER--------------------->
