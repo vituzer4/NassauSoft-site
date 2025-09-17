@@ -217,34 +217,28 @@ body {
   color: red ;
 }
 
-#contato form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: grid;
-  gap: 20px;
-}
 
 .contato__Div{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin: 3em 0em;
 }
 
 .contato__Div__Div{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  gap: 3em;
+  gap: 1em;
 }
 
 .contato__Div__Mapa{ 
     width: 350px;
     height: 350px;
-}
-
-.contato__Formulario__inputs{
-  width: 340px;
 }
 
 .contato__Div__H2{
@@ -262,7 +256,28 @@ body {
   background: var(--light);
 }
 
+.contato__Div__Paragrafo{
+  text-align: center;
+  padding: 0em 1em;
+}
+
+.contato__Div__VamosJuntos{
+  font-weight: 600;
+  font-style: italic;
+}
+
+.contato__Formulario__inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1em;
+}
+
 .contato__Seu__Nome{
+  width: 355px;
+  
   padding: 12px;
   border-radius: 5px;
   border: none;
@@ -270,11 +285,11 @@ body {
 }
 
 .contato__Botao__EnviarMensagem{
+  margin-left: 200px;
   padding: 12px;
   border-radius: 5px;
   border: none;
   font-size: 1rem;
-  margin-bottom: 2em;
 }
 
 .contato__Botao__EnviarMensagem{
@@ -285,18 +300,16 @@ body {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.contato__Botao__EnviarMensagem:hover{
   background-color: #0096c7;
 }
 
-footer {
+.footer {
   background-color: var(--dark);
   text-align: center;
   padding: 30px;
   margin-top: auto;
 }
-
-
 
 @media screen and (min-width: 919px) {
   .header__Div{
@@ -323,18 +336,24 @@ footer {
     width: 33em;
   }
 
+  .contato__Div__Paragrafo{
+    margin-bottom: 2em;
+  }
+
   .contato__Div__Div{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  
+    gap: 3em;
   }
 
   .contato__Div__Mapa{
       width: 450px;
-    height: 320px;
+    height: 400px;
   }
 
-  .contato__Formulario__inputs{
+  .contato__Seu__Nome{
     width: 500px;
   }
 
